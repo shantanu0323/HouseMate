@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/reinitializeGroceries"
+        android:orderInCategory="200"
+        android:title="Re-initialize Groceries"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/reinitializeOrders"
+        android:orderInCategory="200"
+        android:title="Re-initialize Orders"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/reinitializeCustomers"
+        android:orderInCategory="200"
+        android:title="Re-initialize Customers"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/reinitializeRetailers"
+        android:orderInCategory="200"
+        android:title="Re-initialize Retailers"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="About"
+        android:icon="@drawable/info_menu_icon"
+        app:showAsAction="ifRoom"/>
+
+</menu>

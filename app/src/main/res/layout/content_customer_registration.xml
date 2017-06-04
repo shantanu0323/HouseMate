@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kitchen_background2"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="shantanu.housemate.CustomerRegistration"
+    tools:showIn="@layout/activity_customer_registration">
+
+    <LinearLayout
+        android:id="@+id/customerDrawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:context="vituniversity.shantanu.housemate.CustomerRegistration">
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                          xmlns:tools="http://schemas.android.com/tools"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:layoutAnimation="@anim/list_animation"
+                          android:orientation="vertical"
+                          android:paddingBottom="240dp"
+                          android:paddingLeft="15dp"
+                          android:paddingRight="15dp"
+                          android:paddingTop="5dp"
+                          tools:context="vituniversity.shantanu.housemate.CustomerRegistration">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/custFirstNameLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/custom_et1"
+                    android:elevation="4dp"
+                    app:hintTextAppearance="@style/FloatingLabelTheme">
+
+                    <EditText
+                        android:id="@+id/etCustFirstName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_name"
+                        android:hint="First Name"
+                        android:inputType="textPersonName"
+                        android:textSize="18dp"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/custLastNameLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/custom_et1"
+                    android:elevation="4dp"
+                    app:hintTextAppearance="@style/FloatingLabelTheme">
+
+                    <EditText
+                        android:id="@+id/etCustLastName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_name"
+                        android:hint="LastName"
+                        android:inputType="textPersonName"
+                        android:textSize="18dp"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/custEmailLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/custom_et1"
+                    android:elevation="4dp"
+                    app:hintTextAppearance="@style/FloatingLabelTheme">
+
+                    <EditText
+                        android:id="@+id/etCustEmail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_email"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:textSize="18dp"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/custPhoneLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/custom_et1"
+                    android:elevation="4dp"
+                    app:hintTextAppearance="@style/FloatingLabelTheme">
+
+                    <EditText
+                        android:id="@+id/etCustPhone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_phone"
+                        android:hint="Phone No."
+                        android:inputType="phone"
+                        android:maxLength="10"
+                        android:textSize="18dp"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/custAddressLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/custom_et1"
+                    android:elevation="4dp"
+                    app:hintTextAppearance="@style/FloatingLabelTheme">
+
+                    <EditText
+                        android:id="@+id/etCustAddress"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_address"
+                        android:hint="Address"
+                        android:inputType="textMultiLine"
+                        android:textSize="18dp"
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/custCityLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_et1"
+                        android:elevation="4dp"
+                        app:hintTextAppearance="@style/FloatingLabelTheme">
+
+                        <EditText
+                            android:id="@+id/etCustCityLabel"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_city"
+                            android:hint="City"
+                            android:inputType="text"
+                            android:textSize="18dp"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/custPincodeLabel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_et1"
+                        android:elevation="4dp"
+                        app:hintTextAppearance="@style/FloatingLabelTheme">
+
+                        <EditText
+                            android:id="@+id/etCustPincode"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_pincode"
+                            android:hint="PIN Code"
+                            android:inputType="number"
+                            android:maxLength="6"
+                            android:textSize="18dp"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="7dp"
+                    android:orientation="horizontal">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/noOfG"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_et1"
+                        android:elevation="4dp"
+                        app:hintTextAppearance="@style/FloatingLabelTheme">
+
+                        <EditText
+                            android:id="@+id/etNoOfG"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_nog"
+                            android:hint="No of Groceronsors"
+                            android:inputType="number"
+                            android:maxLength="3"
+                            android:textSize="18dp"
+                            />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <ImageButton
+                        android:id="@+id/bNoOfGroceronsorsInfo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/blank_btn"
+                        android:elevation="4dp"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:paddingTop="8dp"
+                        android:shadowColor="#000000"
+                        android:shadowDx="5"
+                        android:shadowDy="5"
+                        android:shadowRadius="5"
+                        android:src="@drawable/info"/>
+
+                </LinearLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/custUsernameLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/custom_et1"
+                    android:elevation="4dp"
+                    app:hintTextAppearance="@style/FloatingLabelTheme">
+
+                    <EditText
+                        android:id="@+id/etCustUsername"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_username"
+                        android:hint="Username"
+                        android:inputType="text"
+                        android:textSize="18dp"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/custPasswordLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/custom_et1"
+                    android:elevation="4dp"
+                    app:hintTextAppearance="@style/FloatingLabelTheme">
+
+                    <EditText
+                        android:id="@+id/etCustPassword"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_password"
+                        android:fontFamily="sans-serif"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:textSize="18dp"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/custCnfPasswordLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="7dp"
+                    android:background="@drawable/custom_et1"
+                    android:elevation="4dp"
+                    app:hintTextAppearance="@style/FloatingLabelTheme">
+
+                    <EditText
+                        android:id="@+id/etCustCnfPassword"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_password"
+                        android:fontFamily="sans-serif"
+                        android:hint="Confirm Password"
+                        android:inputType="textPassword"
+                        android:textSize="18dp"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/bCustSubmit"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/custom_btn2"
+                    android:drawableLeft="@drawable/submit_btn"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:shadowColor="#000000"
+                    android:shadowDx="5"
+                    android:shadowDy="5"
+                    android:shadowRadius="5"
+                    android:text="  Submit"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+</LinearLayout>

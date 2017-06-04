@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="shantanu.housemate">
+
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_housemate"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RetailerRegistration"
+            android:label="@string/title_activity_retailer_drawer"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="shantanu.housemate.RetailerDrawer"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CustomerRegistration"
+            android:label="@string/title_activity_customer_drawer"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="shantanu.housemate.CustomerDrawer"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".DevelopmentInProgress">
+            <intent-filter>
+                <action android:name="shantanu.housemate.DevelopmentInProgress"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegistrationPage"
+            android:label="@string/title_activity_registration_page"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".LoginPage"
+            android:label="@string/title_activity_tab"
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity android:name=".AdminProfile">
+            <intent-filter>
+                <action android:name="shantanu.housemate.AdminProfile"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ViewCustomers">
+        </activity>
+        <activity android:name=".ViewRetailers">
+        </activity>
+        <activity android:name=".CustomerProfile">
+        </activity>
+        <activity android:name=".RetailerProfile">
+        </activity>
+        <activity android:name=".ForgotPassword">
+        </activity>
+        <activity android:name=".ViewRetailerGroceries">
+        </activity>
+        <activity android:name=".ViewCustomerGroceries">
+        </activity>
+        <activity android:name=".ViewNearbyRetailers">
+        </activity>
+        <activity android:name=".GenerateList"
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        <activity
+            android:name=".Payments"
+            android:label="Make Payment">
+        </activity>
+        <activity
+            android:name=".PayPalReg"
+            android:label="Pay Pal"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="com.vitunviersity.hackathon.PayPalReg"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".PlaceOrder">
+        </activity>
+        <activity
+            android:name=".bluetoothchat.BluetoothActivity"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.vituniversity.hostelautomation.BluetoothModule"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".bluetoothchat.DeviceListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/select_device">
+            <intent-filter>
+                <action android:name="com.vituniversity.hostelautomation.bluetoothchat.DeviceListActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

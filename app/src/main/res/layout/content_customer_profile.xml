@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kitchen_background2"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:src="@drawable/customer_bg_blur_image"
+                        android:tint="#66000000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:drawableLeft="@drawable/ic_name_white"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:text="Customer Username"
+                            android:textColor="#fff"
+                            android:textSize="24dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/tvUsername"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:drawableLeft="@drawable/ic_user_white"
+                            android:drawablePadding="5dp"
+                            android:gravity="center"
+                            android:text="Customer Username"
+                            android:textColor="#fff"
+                            android:textSize="18dp"/>
+
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tvEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/custom_bg"
+                            android:drawableLeft="@drawable/ic_email"
+                            android:drawablePadding="20dp"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:maxLines="2"
+                            android:padding="20dp"
+                            android:text="Email"
+                            android:textColor="#800"
+                            android:textSize="16dp"/>
+
+                        <TextView
+                            android:id="@+id/tvPhoneNo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_marginBottom="3dp"
+                            android:background="@drawable/custom_bg"
+                            android:drawableLeft="@drawable/ic_phone"
+                            android:drawablePadding="20dp"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:maxLines="2"
+                            android:padding="20dp"
+                            android:textColor="#080"
+                            android:textSize="16dp"
+                            tools:text="Phone No"/>
+
+                        <TextView
+                            android:id="@+id/tvAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/custom_bg"
+                            android:drawableLeft="@drawable/ic_address"
+                            android:drawablePadding="20dp"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:maxLines="2"
+                            android:padding="20dp"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            tools:text="Address"/>
+
+                        <TextView
+                            android:id="@+id/tvCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_margin="5dp"
+                            android:layout_marginBottom="3dp"
+                            android:background="@drawable/custom_bg"
+                            android:drawableLeft="@drawable/ic_city"
+                            android:drawablePadding="20dp"
+                            android:gravity="center_vertical"
+                            android:padding="20dp"
+                            android:textColor="#0176ac"
+                            android:textSize="16dp"
+                            tools:text="City"/>
+
+                        <TextView
+                            android:id="@+id/tvPincode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/custom_bg"
+                            android:drawableLeft="@drawable/ic_pincode"
+                            android:drawablePadding="20dp"
+                            android:gravity="center_vertical"
+                            android:padding="20dp"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            tools:text="Pincode"/>
+
+                        <TextView
+                            android:id="@+id/tvNog"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/custom_bg"
+                            android:drawableLeft="@drawable/ic_nog"
+                            android:drawablePadding="20dp"
+                            android:gravity="center_vertical"
+                            android:padding="20dp"
+                            android:textColor="#000"
+                            android:textSize="16dp"
+                            tools:text="No of Groceronsers"/>
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="170dp"
+            android:background="@drawable/custom_btn3"
+            android:elevation="14dp"
+            android:padding="20dp"
+            android:src="@drawable/customer_icon"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="20dp"
+            android:elevation="8dp"
+            android:src="@drawable/ic_edit"
+            app:fabSize="normal"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/bChooseGroceries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="25dp"
+            android:elevation="8dp"
+            app:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/ic_choose"
+            app:fabSize="mini"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/bGenerateList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_marginLeft="75dp"
+            android:layout_marginBottom="25dp"
+            android:elevation="8dp"
+            app:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/ic_grocery_white"
+            app:fabSize="mini"/>
+    </FrameLayout>
+</LinearLayout>

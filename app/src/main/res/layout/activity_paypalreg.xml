@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/kitchen_background2"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".PayPalReg">
+
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        app:srcCompat="@drawable/pp"/>
+
+    <Button
+        android:id="@+id/order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@android:dimen/notification_large_icon_height"
+        android:layout_marginRight="@android:dimen/notification_large_icon_width"
+        android:layout_marginTop="30dp"
+        android:onClick="pay"
+        android:text="Pay the Bill"/>
+
+    <TextView
+        android:id="@+id/respose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:textSize="30dp"/>
+
+</LinearLayout>

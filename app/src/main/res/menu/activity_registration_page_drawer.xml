@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/navHome"
+            android:icon="@drawable/housemate_logo"
+            android:title="Home"/>
+    </group>
+
+    <item android:title="Registration Pages">
+        <menu>
+            <item
+                android:id="@+id/navCustomerRegistration"
+                android:icon="@drawable/customer_icon"
+                android:title="Customer Registration"/>
+
+            <item
+                android:id="@+id/navRetailerRegistration"
+                android:icon="@drawable/retailer_icon"
+                android:title="Retailer Registration"/>
+        </menu>
+    </item>
+
+    <item android:title="Login Page">
+        <menu>
+            <item
+                android:id="@+id/navLogin"
+                android:icon="@drawable/login_btn"
+                android:title="Login"/>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,50 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">HouseMate</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_activity_retailer_drawer">Retailer\'s Form</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_customer_drawer">Customer\'s Form</string>
+    <string name="title_activity_home">HouseMate</string>
+    <string name="title_activity_registration_page">RegistrationPage</string>
+    <string name="title_activity_login_page">LoginPage</string>
+    <string name="title_activity_sample">Sample</string>
+    <string name="title_activity_tab">Login</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="admin">admin</string>
+    <string name="retailer">retailer</string>
+    <string name="customer">customer</string>
+
+    <!--  BluetoothChat -->
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected to <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_not_connected">not connected</string>
+
+    <!--  DeviceListActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+    <!-- Options Menu -->
+    <string name="secure_connect">Connect a device - Secure</string>
+    <string name="insecure_connect">Connect a device - Insecure</string>
+    <string name="discoverable">Make discoverable</string>
+
+    <string name="sample_show_log">Show Log</string>
+    <string name="sample_hide_log">Hide Log</string>
+    <string name="title_activity_tool">tool</string>
+</resources>
